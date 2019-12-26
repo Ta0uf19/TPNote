@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="/fragments/head.html"></head>
+<body>
+<header th:insert="/fragments/menu.html"></header>
+<h1> Les differentes adresses </h1 >
+<div class="card" style="width: 18rem;" th:each="address : ${ allAddresses }">
+    <div class="card-body">
+        Content: <li th:text ="${ address.getContent() }"/> <br/>
+        Author: <li th:text ="${ address.getName() }"/><br/>
+        Création date: <li th:text ="${ address.getCreation()}"/><br/>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="/fragments/head.html"></head>
+<body>
+<header th:insert="/fragments/menu.html"></header>
+<p>Search adress</p>
+
+
+<form action="#" th:action="@{/meteo}" method="post">
+    <p>Search input :  <input type="text" name="adresse" /></p>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+
+</body>
+</html>

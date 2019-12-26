@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="/fragments/head.html"></head>
+<body>
+<header th:insert="/fragments/menu.html"></header>
+
+<p>Page meteo</p>
+
+Adresse est : <p th:text=" ${adresse} "/>
+Coordonnées GPS:
+lat : <p th:text=" ${ lat } "/>
+lon : <p th:text=" ${ lon } "/>
+summary : <p th:text=" ${ meteo } "/>
+</body>
+</html>
